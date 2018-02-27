@@ -1,0 +1,15 @@
+spring:
+  jackson:
+    date-format: com.fasterxml.jackson.databind.util.ISO8601DateFormat
+  datasource:
+    platform: h2
+    url: jdbc:h2:mem:beershop
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+    sql-script-encoding: UTF-8
+  jpa:
+    properties:
+      hibernate.show_sql: true
+    hibernate:
+      ddl-auto: none
